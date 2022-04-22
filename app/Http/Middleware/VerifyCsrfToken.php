@@ -13,5 +13,7 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //
+        'http://laravel-y-vue-js-avanzado.test/productos',
+        'http://laravel-y-vue-js-avanzado.test/productos/*'
     ];
 }

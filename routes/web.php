@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('products', function(){
+    return 'Productos list';
+});
+
+Route::post('products', function(){
+    return 'Stocking products';
+});
+
+Route::put('products/{id}', function($id){
+    return 'Update product' . $id;
+});
