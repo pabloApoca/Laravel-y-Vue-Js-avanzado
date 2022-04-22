@@ -81,3 +81,8 @@ Route::delete('employes/{id}', function(Request $request, $id){
     $employe->delete();
     return 'Deleted';
 });
+
+Route::get('employes/{id}', function(Request $request, $id){
+    $employe = Employe::findOrFail($id);
+    return $employe;
+});
