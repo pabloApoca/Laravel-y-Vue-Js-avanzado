@@ -14,9 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('app');
 });
 
+//Also
+//Route::view('/','app');
+/*
 Route::get('products', function(){
     return 'Productos list';
 });
@@ -27,4 +30,4 @@ Route::post('products', function(){
 
 Route::put('products/{id}', function($id){
     return 'Update product' . $id;
-});
+});*/
